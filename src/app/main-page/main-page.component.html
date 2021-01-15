@@ -1,10 +1,10 @@
 <nav class="navbar bg-dark">
   <ul class="nav nav-pills nav-justified">
       <li class="nav-item">
-          <a class="nav-link active" href="#">HOME</a>
+          <a [routerLink]="['/home']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">HOME</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="#">PRICING</a>
+          <a [routerLink]="['/home/pricing']" routerLinkActive="active" class="nav-link">PRICING</a>
       </li>
   </ul>
 </nav>
