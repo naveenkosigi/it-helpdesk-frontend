@@ -4,9 +4,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
+import { PortalPageComponent } from './portal-page/portal-page.component';
 
 const routes:Routes=[
-    {path:'pricing',component:PricingPageComponent}
+    {path:'home',component:MainPageComponent,children:
+      [
+      {path:'pricing',component:PricingPageComponent}
+      ]
+    },
+    {path:'portal',component:PortalPageComponent},
+    {path:'**',redirectTo:'home'}
 ];
 
 @NgModule({
