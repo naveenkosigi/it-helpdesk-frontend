@@ -1,6 +1,6 @@
 
 .container{
-  padding-top: 80px;
+  padding-top: 30px;
 }
 
 .card-img-top{
@@ -12,3 +12,8 @@
 .wallpaper{
   background-size: cover;
 }
+
+.card-container{
+  padding-top: 30px;
+}
+
