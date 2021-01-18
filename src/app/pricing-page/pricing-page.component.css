@@ -1,0 +1,14 @@
+
+.container{
+  padding-top: 80px;
+}
+
+.card-img-top{
+  width: 100%;
+  height: 15vh;
+  object-fit: cover;
+}
+
+.wallpaper{
+  background-size: cover;
+}
