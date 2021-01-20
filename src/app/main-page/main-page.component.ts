@@ -15,7 +15,7 @@ export class MainPageComponent implements OnInit {
   }
 
   showLoginPage(content):void{
-    this.modalService.open(content,{centered:true});
+    this.modalService.open(content,{size: 'xl'});
   }
 
 }
