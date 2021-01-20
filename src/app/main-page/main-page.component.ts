@@ -1,4 +1,6 @@
+import { loginService } from './../services/loginService';
 import { Component, OnInit } from '@angular/core';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap'
 
 @Component({
   selector: 'app-main-page',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public loginService:loginService,private modalService:NgbModal) { }
 
   ngOnInit(): void {
+  }
+
+  showLoginPage(content):void{
+    this.modalService.open(content,{centered:true});
   }
 
 }

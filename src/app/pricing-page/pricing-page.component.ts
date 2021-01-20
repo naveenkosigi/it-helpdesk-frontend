@@ -1,3 +1,4 @@
+import { loginService } from './../services/loginService';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PricingPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private test:loginService) {
+  }
 
   ngOnInit(): void {
   }

@@ -1,3 +1,4 @@
+import { loginService } from './services/loginService';
 import { routing } from './routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -16,7 +17,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MainPageComponent,
     PricingPageComponent,
     PortalPageComponent,
-    ProductPageComponent
+    ProductPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +25,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     routing,
     NgbModule
   ],
-  providers: [],
+  providers: [loginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -15,10 +15,6 @@ export class ProductPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    var card = document.querySelector('.card');
-    card.addEventListener( 'click', function() {
-    card.classList.toggle('is-flipped');
-    });
   }
 
 }
